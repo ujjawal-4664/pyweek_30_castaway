@@ -6,8 +6,12 @@ from ursina.shaders import ssao_shader
 # window.vsync = False
 # if not application.development_mode:
 window.show_ursina_splash = True
-app = Ursina()
-#
+
+def main():
+    app = Ursina()
+    # code to build the game world and create interactive elements goes here
+ 
+
 # Entity.default_shader = colored_lights_shader
 level = load_blender_scene(path = application.asset_folder,
     name='castaway_island',
